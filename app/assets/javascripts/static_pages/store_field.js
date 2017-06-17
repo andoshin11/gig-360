@@ -6,20 +6,20 @@ export default {
   },
   data() {
     return {
-      msg: "sup?"
+      items: null,
     }
   },
   methods: {
     async fetch() {
       try {
-        const {events: events} = await HTTP.get(`/api/events/`);
-        this.events = events;
+        const {items: items} = await HTTP.get(`/api/items/`);
+        this.items = items;
       } catch (e) {
         alert("Something went wrong!");
       }
     },
   },
   mounted() {
-    // this.fetch();
+    this.fetch();
   },
 };
