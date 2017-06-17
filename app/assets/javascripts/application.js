@@ -20,3 +20,4 @@ import 'jquery-drawer';
 import 'jquery-ujs';
 
 import './static_pages';
+import './events';

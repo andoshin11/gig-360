@@ -4,7 +4,7 @@
     %link{:href => "https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css", :rel => "stylesheet"}/
     = stylesheet_link_tag    'application', media: 'all'
     = csrf_meta_tags
-  %body
+  %body{'data-controller': controller_path, 'data-action': action_name}
     .header
       .header__nav
         .header__nav__link
