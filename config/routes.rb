@@ -9,6 +9,7 @@ Rails.application.routes.draw do
 
     resource :events, only: [] do
       post :create
+      get :index
     end
   end
 end

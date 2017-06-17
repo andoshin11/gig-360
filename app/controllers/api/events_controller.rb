@@ -1,6 +1,10 @@
 class Api::EventsController < Api::AbstractController
   # skip_before_action :reject_unauthorized_user, only: [:services]
 
+  def index
+    @events = Event.all
+  end
+
   def create
     event = params[:event]
     start_at = event[:startAt].present? ? DateTime.parse(event[:startAt]) : nil
