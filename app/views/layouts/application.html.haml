@@ -5,6 +5,10 @@
     = stylesheet_link_tag    'application', media: 'all'
     = csrf_meta_tags
   %body
+    .header
+      .header__nav
+        .header__nav__link
+          = link_to "Schedule Session", new_event_path
     .wrapper
       = yield
     = javascript_include_tag 'application'

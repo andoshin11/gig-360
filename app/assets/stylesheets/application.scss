@@ -13,3 +13,22 @@
  *= require_tree .
  *= require_self
  */
+
+ $orange: #f39800;
+
+body {
+  margin: 0;
+}
+
+ .header {
+   height: 65px;
+   background-color: $orange;
+   &__nav {
+     width: 30%;
+     float: right;
+     &__link {
+       color: white;
+       line-height: 65px;
+     }
+   }
+ }
