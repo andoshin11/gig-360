@@ -86,6 +86,7 @@ export default {
         title: "",
       },
       eventId: null,
+      items: null,
     };
   },
   methods: {
@@ -93,6 +94,8 @@ export default {
       try {
         const {event: event} = await HTTP.get(`/api/events/${this.eventId}`);
         this.event = event;
+        const {items: items} = await HTTP.get(`/api/items/`);
+        this.items = items;
       } catch (e) {
         alert("Something went wrong!");
       }

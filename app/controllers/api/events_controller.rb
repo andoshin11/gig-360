@@ -3,7 +3,7 @@ class Api::EventsController < Api::AbstractController
   before_action :set_event, only: [:show]
 
   def index
-    @events = Event.all
+    @events = Event.all.reverse
   end
 
   def show

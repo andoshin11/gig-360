@@ -54,6 +54,20 @@
               </div>
             </div>
           </div>
+          <div class="section-header">
+            Get Items
+          </div>
+          <div class="event__marchs marchs">
+            <div class="march" v-for="item in items">
+              <div class="march__thumbnail">
+                <img :src="item.imageUrl" alt="">
+              </div>
+              <div class="march__info">
+                <div class="march__name">{{ item.name }}</div>
+                <div class="march__price">$ {{ item.price }}</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

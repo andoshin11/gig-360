@@ -20,7 +20,7 @@ export default {
         await HTTP.post('/api/events', {
           event: this.event,
         });
-        window.location.href = '/events';
+        window.location.href = '/';
       } catch (e) {
         alert("Something went wrong!");
       }

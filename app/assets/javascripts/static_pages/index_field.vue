@@ -2,6 +2,23 @@
   <div class="container">
     <div class="row">
       <div class="col-md-10 col-md-offset-1 index">
+        <div class="index__header">
+          <div class="index__genre">
+            <img src="https://i.gyazo.com/3d5c018396bc325be6b52ae9d6d9613e.png" alt="">
+          </div>
+          <div class="index__genre">
+            <img src="https://gyazo.com/8bf8bd3fd6f0950078953c4664de3052.png" alt="">
+          </div>
+          <div class="index__genre">
+            <img src="https://gyazo.com/85b5988a9802281daeb4d59966c82444.png" alt="">
+          </div>
+          <div class="index__genre">
+            <img src="https://gyazo.com/cc26a8cc783e4fbe26d278a5d548888e.png" alt="">
+          </div>
+          <div class="index__genre">
+            <img src="https://i.gyazo.com/44a9f919c160bf961777bb09f1f4715c.png" alt="">
+          </div>
+        </div>
         <div class="index-left">
           <div class="section-header">Discover</div>
           <div class="discover">
