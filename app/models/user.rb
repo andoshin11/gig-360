@@ -5,4 +5,5 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable, :confirmable
 
   has_many :events, inverse_of: :user
+  has_many :items, inverse_of: :user
 end

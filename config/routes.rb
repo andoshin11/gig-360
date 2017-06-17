@@ -15,5 +15,11 @@ Rails.application.routes.draw do
         post :create
       end
     end
+
+    resource :items, only: [] do
+      collection do
+        get :index
+      end
+    end
   end
 end
