@@ -22,7 +22,7 @@ export default {
         });
         window.location.href = '/events';
       } catch (e) {
-        alert("エラーが発生しました！");
+        alert("Something went wrong!");
       }
     },
     fill() {

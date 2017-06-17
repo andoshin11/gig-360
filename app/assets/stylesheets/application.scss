@@ -26,20 +26,126 @@ body {
   width: 50%;
 }
 
- .header {
-   height: 65px;
-   background-color: $orange;
-   &__nav {
-     width: 30%;
-     float: right;
-     &__link {
-       color: white;
-       line-height: 65px;
-     }
-   }
- }
+.type-field {
+    height: 50px;
+    background-color: white;
+    border: solid 1px #ddd;
+    border-radius: 2px;
+    transition: .3s;
+    margin-bottom: 20px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 15px;
+    line-height: 50px;
+    font-size: 16px;
+}
 
- .form {
+.comment {
+  min-height: 90px;
+  transition: .3s;
+  border-bottom: solid 1px #fff;
+  &__left {
+    width: 10%;
+    float: left;
+  }
+  &__right {
+    width: 88%;
+    float: right;
+  }
+  &__thumbnail {
+    width: 80%;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+  }
+  &__info {
+    font-size: 13px;
+    margin-bottom: 3px;
+    font-style: italic;
+  }
+  &__content {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 5px;
+  }
+  &__reply {
+    font-size: 14px;
+    opacity: .7;
+  }
+  &__likes {
+    color: $orange;
+    font-size: 14px;
+    margin-right: 10px;
+  }
+  &__up {
+    cursor: pointer;
+  }
+  &__down {
+    cursor: pointer;
+  }
+}
+
+.event {
+  margin: 50px auto;
+  width: 80%;
+  &__chat {
+    min-height: 150px;
+    background-color: white;
+    padding: 20px;
+    border: solid 1px #ddd;
+    border-radius: 2px;
+    transition: .3s;
+  }
+  &__date {
+    div {}
+  }
+  &__description {
+    margin-bottom: 20px;
+    opacity: .8;
+    letter-spacing: 1px;
+  }
+  &__info {
+    background: white;
+    padding: 20px;
+    border: solid 1px #ddd;
+    border-radius: 2px;
+    margin-bottom: 20px;
+  }
+  &__title {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  &__video {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  &__start-at {
+
+  }
+  &__end-at {
+
+  }
+  &__user {
+    background: white;
+    padding: 20px;
+    border: solid 1px #ddd;
+    border-radius: 2px;
+  }
+}
+.event-left {
+  width: 70%;
+  float: left;
+  padding-bottom: 50px;
+}
+.event-right {
+  width: 25%;
+  float: left;
+  margin-left: 5%;
+}
+
+.form {
    width: 80%;
    margin: 50px auto;
    padding: 20px;
@@ -48,9 +154,59 @@ body {
    &__label {
      margin-bottom: 20px;
    }
-   &__text {
-     line-height: 2;
-     font-size: 16px;
-     margin-bottom: 30px;
-   }
- }
+  &__text {
+    line-height: 2;
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+}
+
+.header {
+  height: 65px;
+  background-color: $orange;
+  &__nav {
+    width: 30%;
+    float: right;
+    &__link {
+      color: white;
+      line-height: 65px;
+    }
+  }
+}
+
+.user {
+  &__image {
+    img{
+      width: 70%;
+      border-radius: 50%;
+      margin: 0 auto 40px;
+      display: block;
+    }
+  }
+  &__name {
+    font-style: italic;
+    margin-bottom: 40px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+  }
+  &__stats {
+    height: 100px;
+    &__stat {
+      width: 33%;
+      float: left;
+      height: 100px;
+      i {
+        display: block;
+        text-align: center;
+        height: 50px;
+        font-size: 36px;
+      }
+      div {
+        font-size: 20px;
+        text-align: center;
+        height: 50px;
+      }
+    }
+  }
+}

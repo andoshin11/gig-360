@@ -8,8 +8,11 @@ Rails.application.routes.draw do
   namespace :api, defaults: { format: :json } do
 
     resource :events, only: [] do
-      post :create
-      get :index
+      get '/:id', to: 'events#show'
+      collection do
+        get :index
+        post :create
+      end
     end
   end
 end

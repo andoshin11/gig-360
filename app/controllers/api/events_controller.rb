@@ -1,8 +1,12 @@
 class Api::EventsController < Api::AbstractController
   # skip_before_action :reject_unauthorized_user, only: [:services]
+  before_action :set_event, only: [:show]
 
   def index
     @events = Event.all
+  end
+
+  def show
   end
 
   def create
@@ -27,6 +31,12 @@ class Api::EventsController < Api::AbstractController
     render json: { success: 'Success!' }, status: 200
   rescue
     render json: { error: 'Create failed' }, status: 422
+  end
+
+  private
+
+  def set_event
+    @event = Event.find(params[:id])
   end
 
 end
