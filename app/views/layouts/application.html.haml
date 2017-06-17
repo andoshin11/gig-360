@@ -6,9 +6,13 @@
     = csrf_meta_tags
   %body{'data-controller': controller_path, 'data-action': action_name}
     .header
+      %a.header__logo{href: "/"} gig 360°
       .header__nav
         .header__nav__link
           = link_to "Schedule Session", new_event_path
+    .sub-header
+      .sub-header__nav
+        %a.sub-header__nav__link{href: "/"} Home
     .wrapper
       = yield
     = include_gon

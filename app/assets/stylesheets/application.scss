@@ -329,6 +329,24 @@ body {
 .header {
   height: 65px;
   background-color: $orange;
+  &__logo {
+    display: block;
+    color: white;
+    line-height: 65px;
+    text-decoration: none;
+    transition: .3s;
+    padding-left: 10%;
+    font-size: 26px;
+    width: 30%;
+    float: left;
+    &:hover {
+      background-color: $orange;
+      color: rgba(256,256,256,.7);
+    }
+    &:visited {
+      color: white;
+    }
+  }
   &__nav {
     width: 30%;
     float: right;
@@ -342,6 +360,30 @@ body {
           background-color: $orange;
           color: rgba(256,256,256,.7);
         }
+      }
+    }
+  }
+}
+
+.sub-header {
+  background-color: white;
+  height: 35px;
+  &__nav {
+    width: 80%;
+    margin: auto;
+    line-height: 35px;
+    font-size: 18px;
+    &__link {
+      text-decoration: none;
+      color: $orange;
+      transition: .3s;
+      cursor: pointer;
+      &:visited {
+        color: $orange;
+      }
+      &:hover {
+        text-decoration: underline;
+        background: white;
       }
     }
   }
