@@ -33,7 +33,15 @@ export default {
         endAt: "2017-10-01 02:00:00",
         movieLink: "https://www.youtube.com/watch?v=0RmmS8dt_ik"
       }
-    }
+    },
+    embedUrl(url) {
+      if (url) {
+        const video_id = url.split("=");
+        return "http://www.youtube.com/embed/" + video_id[1];
+      } else {
+        return null;
+      }
+    },
   },
   mounted() {
   },
