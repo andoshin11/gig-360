@@ -6,7 +6,8 @@
     = csrf_meta_tags
   %body{'data-controller': controller_path, 'data-action': action_name}
     .header
-      %a.header__logo{href: "/"} gig 360°
+      %a.header__logo{href: "/"}
+        %img{src: "https://i.gyazo.com/ad870f2cbf7f9afce4e6d7387fe4bf30.png"}
       .header__nav
         .header__nav__link
           = link_to "Schedule Session", new_event_path

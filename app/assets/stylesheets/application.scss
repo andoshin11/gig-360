@@ -14,7 +14,7 @@
  *= require_self
  */
 
-$orange: #f39800;
+$orange: #ff8c00;
 
 body {
   margin: 0;
@@ -331,14 +331,13 @@ body {
   background-color: $orange;
   &__logo {
     display: block;
-    color: white;
-    line-height: 65px;
-    text-decoration: none;
     transition: .3s;
-    padding-left: 10%;
-    font-size: 26px;
+    padding-left: 7%;
     width: 30%;
     float: left;
+    img{
+      height: 62px;
+    }
     &:hover {
       background-color: $orange;
       color: rgba(256,256,256,.7);
